@@ -1,0 +1,102 @@
+{
+  "rooms": {
+    "room1": {
+      "name": "GA201",
+      "type": "Classroom",
+      "capacity": 50,
+      "status": "Available"
+    },
+    "room2": {
+      "name": "NB-208",
+      "type": "Classroom",
+      "capacity": 50,
+      "status": "Available"
+    },
+    "room3": {
+      "name": "NB-301",
+      "type": "Lab",
+      "capacity": 40,
+      "status": "Booked"
+    },
+    "room4": {
+      "name": "NB-105",
+      "type": "Conference Room",
+      "capacity": 20,
+      "status": "Available"
+    },
+    "room5": {
+      "name": "GA101",
+      "type": "Classroom",
+      "capacity": 60,
+      "status": "Available"
+    },
+    "room6": {
+      "name": "NB-402",
+      "type": "Lab",
+      "capacity": 35,
+      "status": "Available"
+    }
+  },
+  "events": {
+    "event1": {
+      "name": "DJ Evening",
+      "venue": "Pond Area",
+      "time": "7:00 PM – 8:00 PM",
+      "date": "28 April 2026",
+      "organizer": "Savera Club",
+      "dateBadge": "Today"
+    },
+    "event2": {
+      "name": "TedX Talk",
+      "venue": "Lecture Hall",
+      "time": "7:00 PM – 9:30 PM",
+      "date": "29 April 2026",
+      "organizer": "Elysian Club",
+      "dateBadge": "Tomorrow"
+    },
+    "event3": {
+      "name": "Hackathon 2026",
+      "venue": "NB-301",
+      "time": "10:00 AM – 6:00 PM",
+      "date": "1 May 2026",
+      "organizer": "Coding Club",
+      "dateBadge": "1 May"
+    },
+    "event4": {
+      "name": "Cultural Night",
+      "venue": "Auditorium",
+      "time": "6:00 PM – 9:00 PM",
+      "date": "3 May 2026",
+      "organizer": "Student Council",
+      "dateBadge": "3 May"
+    }
+  },
+  "bookings": {
+    "booking1": {
+      "roomId": "room3",
+      "roomName": "NB-301",
+      "userId": "REPLACE_WITH_USER_UID",
+      "className": "Data Structures",
+      "faculty": "Dr. Amit Kumar",
+      "time": "1:00 PM – 2:00 PM",
+      "date": "28 April 2026",
+      "status": "Confirmed",
+      "type": "Class",
+      "roomType": "Lab",
+      "capacity": 40
+    },
+    "booking2": {
+      "roomId": "room2",
+      "roomName": "NB-208",
+      "userId": "REPLACE_WITH_USER_UID",
+      "className": "AI Theory",
+      "faculty": "Dr. Lavitra Joshi",
+      "time": "11:10 AM – 11:55 AM",
+      "date": "28 April 2026",
+      "status": "Confirmed",
+      "type": "Class",
+      "roomType": "Classroom",
+      "capacity": 50
+    }
+  }
+}

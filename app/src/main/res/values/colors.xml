@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="primary_blue">#2962FF</color>
+    <color name="primary_blue_dark">#0039CB</color>
+    <color name="primary_blue_light">#768FFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Background Colors -->
+    <color name="bg_light_gray">#F5F5F5</color>
+    <color name="bg_card">#FFFFFF</color>
+    <color name="bg_search_bar">#FFFFFF</color>
+    <color name="bg_input_field">#F0F0F0</color>
+
+    <!-- Status Colors -->
+    <color name="status_available">#4CAF50</color>
+    <color name="status_booked">#F44336</color>
+    <color name="status_pending">#FF9800</color>
+    <color name="status_confirmed">#4CAF50</color>
+    <color name="status_cancelled">#F44336</color>
+
+    <!-- Badge Colors -->
+    <color name="badge_green_bg">#E8F5E9</color>
+    <color name="badge_green_text">#2E7D32</color>
+    <color name="badge_red_bg">#FFEBEE</color>
+    <color name="badge_red_text">#C62828</color>
+    <color name="badge_blue_bg">#E3F2FD</color>
+    <color name="badge_blue_text">#1565C0</color>
+    <color name="badge_purple_bg">#F3E5F5</color>
+    <color name="badge_purple_text">#6A1B9A</color>
+    <color name="badge_orange_bg">#FFF3E0</color>
+    <color name="badge_orange_text">#E65100</color>
+    <color name="badge_yellow_bg">#FFF8E1</color>
+    <color name="badge_yellow_text">#F57F17</color>
+
+    <!-- Quick Access Icon Colors -->
+    <color name="icon_green">#4CAF50</color>
+    <color name="icon_orange">#FF9800</color>
+    <color name="icon_blue">#2196F3</color>
+    <color name="icon_purple">#9C27B0</color>
+    <color name="icon_pink">#E91E63</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_blue_link">#2962FF</color>
+
+    <!-- Card Border Colors -->
+    <color name="border_red">#F44336</color>
+    <color name="border_blue">#2196F3</color>
+    <color name="border_green">#4CAF50</color>
+    <color name="border_purple">#9C27B0</color>
+    <color name="border_pink">#E91E63</color>
+    <color name="border_orange">#FF9800</color>
+
+    <!-- Chat Colors -->
+    <color name="chat_sent_bg">#2962FF</color>
+    <color name="chat_received_bg">#F0F0F0</color>
+    <color name="chat_sent_text">#FFFFFF</color>
+    <color name="chat_received_text">#212121</color>
+
+    <!-- Notification dot -->
+    <color name="notification_dot">#F44336</color>
+
+    <!-- Approve/Reject -->
+    <color name="approve_green">#4CAF50</color>
+    <color name="reject_red">#F44336</color>
+    <color name="reject_red_bg">#FFEBEE</color>
+
+    <!-- Disabled -->
+    <color name="disabled_gray">#BDBDBD</color>
+    <color name="disabled_bg">#E0E0E0</color>
+
+    <!-- Role badge -->
+    <color name="role_badge_bg">#1A000000</color>
+</resources>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Red left border -->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/border_red"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Room Name + Type Badges -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvRoomName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NB-301"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:id="@+id/tvEventType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Class"
+                    android:textSize="11sp"
+                    android:textColor="@color/badge_blue_text"
+                    android:background="@drawable/bg_badge_blue"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Event Name -->
+            <TextView
+                android:id="@+id/tvEventName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Data Structures"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="6dp"/>
+
+            <!-- Faculty/Organizer -->
+            <TextView
+                android:id="@+id/tvFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. Amit Kumar"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Time + Date Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_clock"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Time"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1:00 PM – 2:00 PM"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="4dp"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="Date"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19 March 2026"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

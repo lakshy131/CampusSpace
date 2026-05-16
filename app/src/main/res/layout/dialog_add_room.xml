@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Room"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Room Name (e.g. GA201)"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="textCapCharacters"
+        android:layout_marginBottom="12dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerRoomType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="12dp"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etCapacity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Capacity (e.g. 50)"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:inputType="number"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            style="@style/Widget.Material3.Button.TextButton"/>
+
+        <Button
+            android:id="@+id/btnAddRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Room"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light_gray">
+
+    <!-- Top Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:paddingTop="28dp"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-black"/>
+
+            <ImageView
+                android:id="@+id/btnLogout"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_logout"
+                android:contentDescription="@string/logout"/>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/university_subtitle"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- Blue Profile + Search Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary_blue"
+        android:padding="16dp">
+
+        <!-- User Info Row -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivProfileIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/ic_account_circle"
+                android:contentDescription="Profile"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toEndOf="@id/ivProfileIcon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="12dp">
+
+                <TextView
+                    android:id="@+id/tvUserName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dr. Lavitra Joshi"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/tvUserRole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/faculty"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:background="@drawable/bg_profile_circle"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <!-- Notification Bell -->
+            <FrameLayout
+                android:id="@+id/flNotification"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_notification"
+                    android:contentDescription="@string/notifications"/>
+
+                <View
+                    android:id="@+id/vNotificationDot"
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="6dp"
+                    android:background="@color/notification_dot"/>
+            </FrameLayout>
+        </RelativeLayout>
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/bg_search_bar"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/ic_search"
+                android:tint="@color/text_secondary"
+                android:contentDescription="@string/search"/>
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:hint="@string/search_hint"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:inputType="text"
+                android:imeOptions="actionSearch"
+                android:importantForAutofill="no"/>
+        </LinearLayout>
+
+        <!-- Search Results Container (hidden by default) -->
+        <TextView
+            android:id="@+id/tvNoResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/no_results"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:background="#40FFFFFF"
+            android:padding="10dp"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <!-- Quick Access Section -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quick_access"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:fontFamily="monospace"/>
+
+            <!-- Available Rooms -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardAvailableRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivAvailable"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_available_rooms"
+                        android:background="@drawable/bg_approve_button"
+                        android:padding="10dp"
+                        android:contentDescription="Available Rooms"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/available_rooms"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_toEndOf="@id/ivAvailable"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="Go"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Booked Rooms -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardBookedRooms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivBooked"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_booked_rooms"
+                        android:background="@drawable/bg_icon_orange"
+                        android:padding="10dp"
+                        android:contentDescription="Booked Rooms"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booked_rooms"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_toEndOf="@id/ivBooked"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="Go"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- My Bookings -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardMyBookings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivMyBookings"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_my_bookings"
+                        android:background="@drawable/bg_icon_blue"
+                        android:padding="10dp"
+                        android:contentDescription="My Bookings"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/my_bookings"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_toEndOf="@id/ivMyBookings"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="Go"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Events & Venues -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardEvents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivEvents"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_events"
+                        android:background="@drawable/bg_icon_purple"
+                        android:padding="10dp"
+                        android:contentDescription="Events"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/events_venues"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_toEndOf="@id/ivEvents"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="Go"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Contact Program Office -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="2dp"
+                app:cardBackgroundColor="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <ImageView
+                        android:id="@+id/ivContact"
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@drawable/ic_contact"
+                        android:background="@drawable/bg_icon_pink"
+                        android:padding="10dp"
+                        android:contentDescription="Contact"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/contact_program_office"
+                        android:textSize="16sp"
+                        android:textColor="@color/text_primary"
+                        android:layout_toEndOf="@id/ivContact"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"/>
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_chevron_right"
+                        android:contentDescription="Go"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/book_room_title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"/>
+
+    <!-- Room name display -->
+    <TextView
+        android:id="@+id/tvRoomName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GA201"
+        android:textSize="16sp"
+        android:textColor="@color/primary_blue"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Purpose -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/purpose_label"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etPurpose"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="@string/purpose_hint"
+        android:textSize="14sp"
+        android:inputType="text"
+        android:importantForAutofill="no"/>
+
+    <!-- Date -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date_label"
+        android:textSize="14sp"
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="12dp"/>
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/bg_input_field"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:hint="@string/date_hint"
+        android:textSize="14sp"
+        android:focusable="false"
+        android:clickable="true"/>
+
+    <!-- Time Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Time"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"/>
+
+            <EditText
+                android:id="@+id/etStartTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_field"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/start_time_hint"
+                android:textSize="14sp"
+                android:focusable="false"
+                android:clickable="true"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="6dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Time"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"/>
+
+            <EditText
+                android:id="@+id/etEndTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/bg_input_field"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:hint="@string/end_time_hint"
+                android:textSize="14sp"
+                android:focusable="false"
+                android:clickable="true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/cancel"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_disabled_button"
+            android:layout_marginEnd="6dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="@string/submit_booking"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_blue_button"
+            android:layout_marginStart="6dp"/>
+    </LinearLayout>
+</LinearLayout>

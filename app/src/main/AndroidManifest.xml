@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Campusspace"
+        tools:targetApi="31">
+
+        <!-- Auth Router / Splash -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Login -->
+        <activity android:name=".LoginActivity"
+            android:exported="false"/>
+
+        <!-- Register -->
+        <activity android:name=".RegisterActivity"
+            android:exported="false"/>
+
+        <!-- User Dashboard -->
+        <activity android:name=".DashboardActivity"
+            android:exported="false"/>
+
+        <!-- Available Rooms -->
+        <activity android:name=".AvailableRoomsActivity"
+            android:exported="false"/>
+
+        <!-- Booked Rooms -->
+        <activity android:name=".BookedRoomsActivity"
+            android:exported="false"/>
+
+        <!-- My Bookings -->
+        <activity android:name=".MyBookingsActivity"
+            android:exported="false"/>
+
+        <!-- Events & Venues -->
+        <activity android:name=".EventsActivity"
+            android:exported="false"/>
+
+        <!-- Notifications -->
+        <activity android:name=".NotificationsActivity"
+            android:exported="false"/>
+
+        <!-- Chat -->
+        <activity android:name=".ChatActivity"
+            android:exported="false"/>
+
+        <!-- Search Results -->
+        <activity android:name=".SearchResultsActivity"
+            android:exported="false"/>
+
+        <!-- Admin Dashboard -->
+        <activity android:name=".AdminDashboardActivity"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

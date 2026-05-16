@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">CampusSpace</string>
+    <string name="university_subtitle">University Room Booking System</string>
+
+    <!-- Login -->
+    <string name="email_label">Email / University id</string>
+    <string name="password_label">Password</string>
+    <string name="login_button">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_here">Reset here</string>
+    <string name="login_error">Invalid email or password</string>
+    <string name="email_required">Email is required</string>
+    <string name="password_required">Password is required</string>
+    <string name="password_reset_sent">Password reset email sent</string>
+
+    <!-- Dashboard -->
+    <string name="quick_access">Quick Access</string>
+    <string name="search_hint">Search room / hall / venue…</string>
+    <string name="available_rooms">Available Rooms</string>
+    <string name="booked_rooms">Booked Rooms</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="events_venues">Events &amp; Venues</string>
+    <string name="contact_program_office">Contact Program Office</string>
+    <string name="no_results">No results found for your search.</string>
+
+    <!-- Room -->
+    <string name="type_label">Type:</string>
+    <string name="capacity_label">Capacity:</string>
+    <string name="seats_suffix">seats</string>
+    <string name="book_room">Book Room</string>
+    <string name="currently_booked">Currently Booked</string>
+    <string name="awaiting_approval">Awaiting Approval</string>
+    <string name="status_available">Available</string>
+    <string name="status_booked">Booked</string>
+    <string name="status_pending">Pending approval</string>
+
+    <!-- Booking -->
+    <string name="classroom">Classroom</string>
+    <string name="lab">Lab</string>
+    <string name="conference_room">Conference Room</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="pending">Pending</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="class_type">Class</string>
+    <string name="event_type">Event</string>
+
+    <!-- Events -->
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="venue_label">Venue:</string>
+    <string name="time_label">Time:</string>
+    <string name="date_label">Date:</string>
+    <string name="organized_by_label">Organized by:</string>
+
+    <!-- Notifications -->
+    <string name="notifications">Notifications</string>
+
+    <!-- Chat -->
+    <string name="program_office">Program Office</string>
+    <string name="online">Online</string>
+    <string name="type_message_hint">Type a message…</string>
+
+    <!-- Admin -->
+    <string name="admin_title">Program Office Admin</string>
+    <string name="tab_requests">Requests</string>
+    <string name="tab_schedule">Schedule</string>
+    <string name="tab_chats">Chats</string>
+    <string name="approve">Approve</string>
+    <string name="reject">Reject</string>
+    <string name="requested_by">Requested by:</string>
+    <string name="purpose_label">Purpose:</string>
+    <string name="todays_schedule">Today\'s Schedule</string>
+    <string name="new_badge">New</string>
+
+    <!-- Booking Dialog -->
+    <string name="book_room_title">Book Room</string>
+    <string name="purpose_hint">Enter purpose (e.g., AI Theory Class)</string>
+    <string name="date_hint">Select Date</string>
+    <string name="start_time_hint">Start Time</string>
+    <string name="end_time_hint">End Time</string>
+    <string name="submit_booking">Submit Booking</string>
+    <string name="cancel">Cancel</string>
+    <string name="booking_success">Booking request sent for %1$s!\nYou\'ll be notified once the Program Office approves it.</string>
+    <string name="booking_error">Failed to submit booking request</string>
+
+    <!-- General -->
+    <string name="faculty">Faculty</string>
+    <string name="student">Student</string>
+    <string name="admin">Admin</string>
+    <string name="logout">Logout</string>
+    <string name="back">Back</string>
+    <string name="search">Search</string>
+    <string name="no_data">No data available</string>
+</resources>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- BML Munjal University Logo Area -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BML MUNJAL"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UNIVERSITY™"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A HERO GROUP INITIATIVE"
+                android:textSize="10sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="2dp"/>
+        </LinearLayout>
+
+        <!-- App Icon -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="14dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/primary_blue">
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_building"
+                android:contentDescription="App icon"/>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join CampusSpace to book rooms"
+            android:textSize="14sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"/>
+
+        <!-- Full Name Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="28dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:hint="Enter your full name"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:inputType="textPersonName"
+            android:importantForAutofill="no"/>
+
+        <!-- Email Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/email_label"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingStart="16dp"
+            android:paddingEnd="48dp"
+            android:hint="name@bmu.edu.in"
+            android:textColorHint="@color/text_secondary"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:importantForAutofill="no"/>
+
+        <!-- Role Selector -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Role"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerRole"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:popupBackground="@color/white"/>
+
+        <!-- Password Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/password_label"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:hint="Min 6 characters"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:importantForAutofill="no"/>
+
+            <ImageView
+                android:id="@+id/ivTogglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_eye_off"
+                android:contentDescription="Toggle password visibility"/>
+        </RelativeLayout>
+
+        <!-- Confirm Password Field -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:textSize="14sp"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="16dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_input_field">
+
+            <EditText
+                android:id="@+id/etConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:paddingStart="16dp"
+                android:paddingEnd="48dp"
+                android:hint="Re-enter password"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="14sp"
+                android:inputType="textPassword"
+                android:importantForAutofill="no"/>
+
+            <ImageView
+                android:id="@+id/ivToggleConfirmPassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_eye_off"
+                android:contentDescription="Toggle confirm password visibility"/>
+        </RelativeLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="28dp"
+            android:text="Create Account"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:background="@drawable/bg_blue_button"
+            android:fontFamily="monospace"/>
+
+        <!-- Already have account -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"/>
+
+            <TextView
+                android:id="@+id/tvGoToLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login here"
+                android:textSize="13sp"
+                android:textColor="@color/text_blue_link"
+                android:textStyle="bold"
+                android:layout_marginStart="4dp"/>
+        </LinearLayout>
+
+        <!-- Error message -->
+        <TextView
+            android:id="@+id/tvError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/status_booked"
+            android:textSize="13sp"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <!-- Progress bar -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

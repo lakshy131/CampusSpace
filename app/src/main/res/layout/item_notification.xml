@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Colored left border -->
+        <View
+            android:id="@+id/vBorder"
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/border_green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Room NB-301 booking approved"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"/>
+
+            <!-- Message -->
+            <TextView
+                android:id="@+id/tvMessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your booking has been successfully approved."
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Time Ago -->
+            <TextView
+                android:id="@+id/tvTimeAgo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5 min ago"
+                android:textSize="11sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

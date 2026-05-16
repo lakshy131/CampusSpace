@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="12dp"
+    android:paddingBottom="12dp">
+
+    <!-- Colored left bar -->
+    <View
+        android:id="@+id/vColorBar"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/border_blue"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="12dp">
+
+        <TextView
+            android:id="@+id/tvRoomName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NB-301"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"/>
+
+        <TextView
+            android:id="@+id/tvEventTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data Structures - 1:00 PM – 2:00 PM"
+            android:textSize="13sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+</LinearLayout>

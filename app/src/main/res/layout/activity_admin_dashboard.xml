@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_light_gray">
+
+    <!-- Admin Blue Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/primary_blue"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/admin_title"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <!-- Tab Bar -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        app:tabIndicatorColor="@color/primary_blue"
+        app:tabSelectedTextColor="@color/text_primary"
+        app:tabTextColor="@color/text_secondary"
+        app:tabMode="fixed"
+        app:tabGravity="fill"/>
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- Admin Actions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:gravity="center_vertical">
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabAddRoom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_building"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/primary_blue"
+            app:iconSize="18dp"
+            android:layout_marginEnd="8dp"/>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fabAddEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Event"
+            android:textSize="12sp"
+            app:icon="@drawable/ic_events"
+            android:textColor="@color/white"
+            app:iconTint="@color/white"
+            android:backgroundTint="@color/status_pending"
+            app:iconSize="18dp"
+            android:layout_marginStart="8dp"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/btnLogout"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_logout"
+            android:contentDescription="@string/logout"
+            app:tint="@color/text_secondary"
+            android:padding="4dp"/>
+    </LinearLayout>
+</LinearLayout>

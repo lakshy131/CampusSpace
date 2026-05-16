@@ -1,0 +1,30 @@
+11{
+  "project_info": {
+    "project_number": "278768676059",
+    "firebase_url": "https://campus-space-d255c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "campus-space-d255c",
+    "storage_bucket": "campus-space-d255c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278768676059:android:41c9d6a48ddd4dda5db0fe",
+        "android_client_info": {
+          "package_name": "com.example.campus_space"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5PhbPBE-8sF3huOtRJ-yqzZOyXz-zoMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

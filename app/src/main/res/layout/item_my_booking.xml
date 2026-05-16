@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <!-- Blue left border -->
+        <View
+            android:layout_width="4dp"
+            android:layout_height="match_parent"
+            android:background="@color/border_blue"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Room Name + Badges -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvRoomName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="NB-208"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/text_primary"/>
+
+                <TextView
+                    android:id="@+id/tvRoomType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Classroom"
+                    android:textSize="11sp"
+                    android:textColor="@color/badge_blue_text"
+                    android:background="@drawable/bg_badge_blue"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"/>
+
+                <TextView
+                    android:id="@+id/tvStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Confirmed"
+                    android:textSize="11sp"
+                    android:textColor="@color/badge_green_text"
+                    android:background="@drawable/bg_badge_green"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+
+            <!-- Capacity -->
+            <TextView
+                android:id="@+id/tvCapacity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capacity: 50 seats"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="6dp"/>
+
+            <!-- Class Name -->
+            <TextView
+                android:id="@+id/tvClassName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AI Theory"
+                android:textSize="14sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Faculty -->
+            <TextView
+                android:id="@+id/tvFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dr. Lavitra Joshi"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="4dp"/>
+
+            <!-- Time + Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_clock"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Time"/>
+
+                <TextView
+                    android:id="@+id/tvTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="11:10 AM – 11:55 AM"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="4dp"/>
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/ic_calendar"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:contentDescription="Date"/>
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="19 March 2026"
+                    android:textSize="12sp"
+                    android:textColor="@color/text_secondary"
+                    android:layout_marginStart="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
